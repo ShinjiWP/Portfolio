@@ -2,21 +2,23 @@
 	display: grid;
 	height: 100vh;
 	justify-content: center;
+	align-items: center;
 	padding: 0 3%;
 	overflow-x: hidden;
 	grid-template:
-	  "----" 50px
+		"----" 50px
 		"nav" 1fr
-		"Products"
-		"Skills"
-		"Contact"
+		"products"auto
+		"skills"auto
+		"contact"auto
 		"footer" 50px
-		/ minmax(50%, 1000px);
+		/ minmax(80%, 1000px);
 
-		&--nav{
-			grid-area: nav;
-		}
-		&--footer{
-			grid-area: footer;
-		}
+	&--nav {
+		grid-area: nav;
+		width: 100%;
+	}
+	&--footer {
+		grid-area: footer;
+	}
 }

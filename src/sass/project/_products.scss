@@ -1,0 +1,11 @@
+.p-products {
+	opacity: 0;
+	transition: 800ms;
+}
+.open {
+	display: block;
+	height: 100px;
+	width: 80%;
+	background-color: #fff;
+	opacity: 1;
+}

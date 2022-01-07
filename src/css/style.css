@@ -424,12 +424,14 @@ figure {
   display: grid;
   height: 100vh;
   justify-content: center;
+  align-items: center;
   padding: 0 3%;
   overflow-x: hidden;
-  grid-template: "----" 50px "nav" 1fr "Products" "Skills" "Contact" "footer" 50px/minmax(50%, 1000px);
+  grid-template: "----" 50px "nav" 1fr "products" auto "skills" auto "contact" auto "footer" 50px/minmax(80%, 1000px);
 }
 .c-grid--nav {
   grid-area: nav;
+  width: 100%;
 }
 .c-grid--footer {
   grid-area: footer;
@@ -511,10 +513,22 @@ figure {
 }
 
 .p-nav {
-  display: flex;
-  height: 90%;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.p-products {
+  opacity: 0;
+  transition: 800ms;
+}
+
+.open {
+  display: block;
+  height: 100px;
+  width: 80%;
+  background-color: #fff;
+  opacity: 1;
 }
 
 .u-image-add {
