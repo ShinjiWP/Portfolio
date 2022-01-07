@@ -1,0 +1,25 @@
+@use "../global/font-size" as f;
+@use "../global/color" as c;
+
+.c-text {
+	font-size: f.$text-normal;
+	line-height: 1.5;
+	color: c.$font-white;
+
+	&--small {
+		font-size: f.$text-small;
+	}
+
+	&--large {
+		font-size: f.$text-large;
+	}
+
+	&--underline {
+		text-decoration: underline;
+		text-decoration-color: black;
+	}
+}
+
+.c-text--bold {
+	font-weight: 700;
+}

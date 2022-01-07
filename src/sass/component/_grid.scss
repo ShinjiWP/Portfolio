@@ -1,0 +1,19 @@
+.c-grid {
+	display: grid;
+	height: 100vh;
+	justify-content: center;
+	padding: 0 3%;
+	overflow-x: hidden;
+	grid-template:
+	  "----" 50px
+		"nav" 1fr
+		"footer" 50px
+		/ minmax(50%, 1000px);
+
+		&--nav{
+			grid-area: nav;
+		}
+		&--footer{
+			grid-area: footer;
+		}
+}

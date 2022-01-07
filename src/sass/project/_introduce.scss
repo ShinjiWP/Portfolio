@@ -1,0 +1,25 @@
+@use "../global/font-size" as f;
+
+.p-introduce {
+	display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 10px;
+	&__head {
+		font-size: f.$text-normal;
+	}
+
+  &__image{
+    width: 100%;
+  }
+
+	&__description {
+		display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+		> p {
+			display: block;
+		}
+	}
+}
