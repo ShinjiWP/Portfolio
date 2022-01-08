@@ -1,13 +1,8 @@
 .p-nav {
-	// display: flex;
-	// flex-wrap: wrap;
-	// height: 90%;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	gap: 20px;
-	// margin: auto;
-	// height: 20px;
-// 
-	// justify-content: space-around;
-	// align-items: center;
+	width: 100%;
+
+	
 }
