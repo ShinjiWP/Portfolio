@@ -1,3 +1,11 @@
+$(".p-nav__btn").on("click", function () {
+	event.preventDefault();
+	var link = $(this).attr("href");
+	setTimeout(function () {
+		location.href = link;
+	}, 1500);
+});
+
 const mediaQuery = window.matchMedia("(max-width: 1079px)");
 
 // ページが読み込まれた時に実行
@@ -14,7 +22,7 @@ function handle(mm) {
 		});
 	} else {
 	}
-}
+};
 
 //以下は基本的な書き方
 // $(function () {
