@@ -4,31 +4,36 @@
 		<meta charset="utf-8" />
 		<meta name="description" content="Shinjiのポートフォリオサイトになります" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Shinji’ｓ Portfolio</title>
+		<title>ShinjiWPD Portfolio</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet" />
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
-		<link rel="icon" type="img.ico" href="./src/image/favicon/favicon.ico" />
+		<link rel="icon" type="img.ico" href="../src/image/favicon/favicon.ico" />
 		<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
-		<link rel="stylesheet" href="src/css/style.css" />
-		<script src="anime.min.js"></script>
+		<link rel="stylesheet" href="./src/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="./html/css/background.css" />
 	</head>
-	<body class="c-grid c-bg--black">
-		<div class="c-grid--nav p-nav">
-			<a id="btn1" class="c-button p-nav__btn" href="#">Products</a>
-			<div class="p-products"></div>
-			<a id="btn2" class="c-button p-nav__btn" href="#">Skills</a>
-			<div class="p-skills"></div>
-			<a id="btn3" class="c-button p-nav__btn" href="#">Contact</a>
-			<div class="p-contact"></div>
+	<body>
+		<div id="particles-js"></div>
+		<div id="wrapper" class="c-grid">
+			<div class="c-grid--nav p-nav">
+				<a data-hover="Products" class="button p-nav__btn" href="#"
+					><span>制</span><span>作</span><span>実</span><span>績</span></a
+				>
+				<a data-hover="Skills" class="button p-nav__btn" href="#"><span>ス</span><span>キ</span><span>ル</span></a>
+				<a data-hover="Blog" class="button p-nav__btn" href="#"><span>ブ</span><span>ロ</span><span>グ</span></a>
+				<a data-hover="Contact" class="button p-nav__btn" href="#"
+					><span>問</span><span>い</span><span>合</span><span>わ</span><span>せ</span></a
+				>
+			</div>
+			<footer class="c-grid--footer p-footer">
+				<small class="c-text p-footer__cr">&copy; ShinjiWPD</small>
+			</footer>
 		</div>
-
-		<footer class="c-grid--footer p-footer">
-			<small class="c-text p-footer__cr">&copy; ShinjiWPD</small>
-		</footer>
-		<script src="./src/js/assets/jquery-3.6.0.min.js"></script>
-		<script src="anime.min.js"></script>
-		<script src="./src/js/assets/scripts.js"></script>
+		<script src="../src/js/assets/jquery-3.6.0.min.js"></script>
+		<script src="../src/js/assets/scripts.js"></script>
+		<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+		<script src="./html/js/background.js"></script>
 	</body>
 </html>
