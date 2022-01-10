@@ -22,7 +22,7 @@ function handle(mm) {
 		});
 	} else {
 	}
-};
+}
 
 //以下は基本的な書き方
 // $(function () {

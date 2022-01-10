@@ -1,4 +1,4 @@
-.c-grid {
+.c-grid--front {
 	display: grid;
 	height: 100vh;
 	justify-content: center;
@@ -7,17 +7,29 @@
 	grid-template:
 		"----" 50px
 		"nav" 1fr
-		// "products"auto
-		// "skills"auto
-		// "contact"auto
 		"footer" 50px
-		/ minmax(100%, 1000px);
+		/ 100%;
 
-	&--nav {
+	&__nav {
 		grid-area: nav;
 		width: 100%;
 	}
-	&--footer {
+
+	&__footer {
 		grid-area: footer;
 	}
+
 }
+
+.c-grid--skills {
+	grid-template:
+		"----" 50px
+		"skills" 1fr
+		"footer" 50px
+		/ 100%;
+
+	&__main {
+	grid-area: skills;
+}
+}
+
