@@ -10,6 +10,7 @@
 	&--small {
 		@extend .c-text;
 		font-size: f.$text-small;
+		font-weight: 300;
 	}
 
 	&--large {

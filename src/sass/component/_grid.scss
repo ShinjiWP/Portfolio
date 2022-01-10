@@ -16,21 +16,8 @@
 			width: 100%;
 		}
 	}
-
-	&--skills {
-		grid-template:
-			"----" 50px
-			"skills" 1fr
-			"footer" 50px
-			/ 100%;
-
-		&__main {
-			grid-area: skills;
-			height: 100%;
-		}
-	}
-
 	&__footer {
 		grid-area: footer;
 	}
+	
 }

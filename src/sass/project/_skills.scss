@@ -4,4 +4,12 @@
 	gap: 20px;
 	width: 75%;
 	margin: auto;
+  height: auto;
+	&__card {
+		height:200px;
+		background-color: #fff;
+		outline: 1px solid #000;
+	
+	}
 }
+
