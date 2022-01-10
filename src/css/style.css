@@ -532,15 +532,15 @@ body {
   grid-area: nav;
   width: 100%;
 }
-.c-grid--front__footer {
-  grid-area: footer;
-}
-
 .c-grid--skills {
   grid-template: "----" 50px "skills" 1fr "footer" 50px/100%;
 }
 .c-grid--skills__main {
   grid-area: skills;
+  height: 100%;
+}
+.c-grid__footer {
+  grid-area: footer;
 }
 
 .c-head {
@@ -565,25 +565,22 @@ body {
   border-radius: 10px;
 }
 
-.c-text {
-  font-size: min(2.8vw, 16px);
+.c-text, .c-text--large, .c-text--small {
+  font-size: 1.3rem;
   line-height: 1.5;
   color: white;
+  font-family: "Roboto", sans-serif;
 }
 .c-text--small {
-  font-size: min(2.5vw, 14px);
+  font-size: 1rem;
 }
 .c-text--large {
-  font-size: min(3vw, 20px);
+  font-size: 2rem;
 }
 .c-text--underline {
   text-decoration: underline;
   -webkit-text-decoration-color: black;
           text-decoration-color: black;
-}
-
-.c-text--bold {
-  font-weight: 700;
 }
 
 .p-footer {
@@ -595,27 +592,6 @@ body {
 .p-header {
   display: flex;
   justify-content: center;
-}
-
-.p-introduce {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  gap: 10px;
-}
-.p-introduce__head {
-  font-size: min(2.8vw, 16px);
-}
-.p-introduce__image {
-  width: 100%;
-}
-.p-introduce__description {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-.p-introduce__description > p {
-  display: block;
 }
 
 .p-nav {
@@ -637,6 +613,14 @@ body {
   width: 80%;
   background-color: #fff;
   opacity: 1;
+}
+
+.p-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 75%;
+  margin: auto;
 }
 
 .u-image-add {

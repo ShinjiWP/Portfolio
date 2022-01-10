@@ -1,0 +1,7 @@
+.p-skills {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+	width: 75%;
+	margin: auto;
+}

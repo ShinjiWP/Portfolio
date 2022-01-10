@@ -1,35 +1,36 @@
-.c-grid--front {
-	display: grid;
-	height: 100vh;
-	justify-content: center;
-	align-items: center;
-	overflow-x: hidden;
-	grid-template:
-		"----" 50px
-		"nav" 1fr
-		"footer" 50px
-		/ 100%;
+.c-grid {
+	&--front {
+		display: grid;
+		height: 100vh;
+		justify-content: center;
+		align-items: center;
+		overflow-x: hidden;
+		grid-template:
+			"----" 50px
+			"nav" 1fr
+			"footer" 50px
+			/ 100%;
 
-	&__nav {
-		grid-area: nav;
-		width: 100%;
+		&__nav {
+			grid-area: nav;
+			width: 100%;
+		}
+	}
+
+	&--skills {
+		grid-template:
+			"----" 50px
+			"skills" 1fr
+			"footer" 50px
+			/ 100%;
+
+		&__main {
+			grid-area: skills;
+			height: 100%;
+		}
 	}
 
 	&__footer {
 		grid-area: footer;
 	}
-
 }
-
-.c-grid--skills {
-	grid-template:
-		"----" 50px
-		"skills" 1fr
-		"footer" 50px
-		/ 100%;
-
-	&__main {
-	grid-area: skills;
-}
-}
-

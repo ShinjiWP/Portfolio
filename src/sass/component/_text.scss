@@ -1,16 +1,19 @@
-@use "../global/font-size" as f;
+@use "../global/font" as f;
 @use "../global/color" as c;
 
 .c-text {
 	font-size: f.$text-normal;
 	line-height: 1.5;
 	color: c.$font-white;
+	font-family: f.$Roboto;
 
 	&--small {
+		@extend .c-text;
 		font-size: f.$text-small;
 	}
 
 	&--large {
+		@extend .c-text;
 		font-size: f.$text-large;
 	}
 
@@ -18,8 +21,4 @@
 		text-decoration: underline;
 		text-decoration-color: black;
 	}
-}
-
-.c-text--bold {
-	font-weight: 700;
 }
