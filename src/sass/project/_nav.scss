@@ -1,7 +1,6 @@
 @use "../global/font" as f;
 @use "../global/color" as c;
 
-
 .p-nav {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -10,6 +9,20 @@
 	margin: auto;
 	&__btn > span {
 		color: c.$font-white;
-		font-family: f.$Roboto;
+		font-family: f.$Evolve;
 	}
+
+	
+}
+.box {
+  margin: 10px;
+  background: #111738;
+  display: inline-block;
+}
+
+.text-centered {
+  font: bold 100px "Source Code Pro", "consolas", "Menlo", "Courier";
+  fill: #ffffff;
+  dominant-baseline: middle;
+  text-anchor: middle;
 }
