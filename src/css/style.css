@@ -552,6 +552,7 @@ body {
   text-align: left;
   color: #fff;
   font-family: "Arial black";
+  letter-spacing: 0.5px;
 }
 
 .c-image {
@@ -767,9 +768,9 @@ body {
 }
 
 .p-header {
-  font-size: 6rem;
+  font-size: 3rem;
   line-height: 0.84;
-  padding-top: 1rem;
+  padding: 1rem 0 0 1rem;
 }
 
 .p-nav {
