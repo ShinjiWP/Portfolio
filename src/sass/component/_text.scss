@@ -3,7 +3,6 @@
 
 .c-text {
 	font-size: f.$text-normal;
-	line-height: 1.5;
 	color: c.$font-white;
 	font-family: f.$Roboto;
 
@@ -20,6 +19,11 @@
 
 	&--underline {
 		text-decoration: underline;
-		text-decoration-color: black;
+		text-decoration-color: #fff;
+	}
+
+	&--weight {
+		font-weight: 700;
+		letter-spacing: 0.1em;
 	}
 }

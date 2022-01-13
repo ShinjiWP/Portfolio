@@ -10,7 +10,7 @@
 	&:hover {
 		background-color: rgba(255, 255, 255, 0.3);
 		border-radius: 30px;
-		// box-shadow: 0px 0px 60px rgba(255, 255, 255, .6);
+		box-shadow: 0px 0px 60px rgba(255, 255, 255, 0.6);
 	}
 }
 
@@ -24,6 +24,10 @@
 	text-decoration: none;
 	outline: none;
 	overflow: hidden;
+	&:hover {
+		background-color: rgba(255, 255, 255, 0.2);
+		box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
+	}
 }
 .button span {
 	display: inline-block;
@@ -38,6 +42,8 @@
 	width: 100%;
 	top: 0;
 	left: 0;
+	font-weight: 700;
+	letter-spacing: 0.12em;
 	content: attr(data-hover);
 	padding: 0.5em 4em;
 	transition: transform 0.4s, opacity 0.4s;

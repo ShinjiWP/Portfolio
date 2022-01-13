@@ -1,5 +1,7 @@
 @use "../global/font" as f;
 
 .c-head {
-	text-align: center;
+	text-align: left;
+	color: #fff;
+	font-family: f.$Arial;
 }
