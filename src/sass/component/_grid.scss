@@ -1,13 +1,16 @@
 .c-grid {
 	display: grid;
-	height: 100vh;
+	// height: 100vh;
 	overflow-x: hidden;
+	position: relative;
+	height: 100%;
+	background-color:#000;
 	grid-template:
 		"head" 1.5fr
-		"main"1fr
+		"main" 1fr
 		"footer" 100px
 		/ 100%;
-	&__head{
+	&__head {
 		grid-area: head;
 	}
 	&__front {
@@ -19,5 +22,11 @@
 	}
 	&__footer {
 		grid-area: footer;
+	}
+	&::after {
+		width: 50%;
+		height: 100%;
+		position: absolute;
+		background-color: #fff;
 	}
 }

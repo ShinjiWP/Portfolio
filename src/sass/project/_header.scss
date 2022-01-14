@@ -1,5 +1,28 @@
 .p-header {
 	font-size: 3rem;
-	line-height: 0.84;
-	padding: 1rem 0 0 1rem;
+	line-height: 0.9;
+	padding: 2rem 2rem 0;
+	&__ttl {
+		&:nth-child(1) span {
+			color: #ff0000;
+		}
+		&:nth-child(2) {
+		}
+		&:nth-child(3) {
+		}
+		&:nth-child(4){
+      position: relative;
+      &::after {
+        
+      // color: #00ff00;
+      content: "";
+      position: absolute;
+      height: 11px;
+      width: 11px;
+      background-color: #00ff00;
+      border-radius: 50%;
+      right: 29px;
+      }
+		}
+	}
 }
