@@ -374,9 +374,6 @@ p {
   margin: 0;
 }
 
-/*.p-headerのアニメーション*/
-/*.c-lineのアニメーション*/
-/*.c-lineのアニメーション*/
 html,
 body {
   height: 100%;
@@ -530,16 +527,6 @@ body {
   grid-area: main;
   width: 100%;
 }
-.c-grid__footer {
-  grid-area: footer;
-}
-.c-grid::after {
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  background-color: #fff;
-}
-
 .c-head {
   text-align: right;
   color: white;
@@ -745,7 +732,7 @@ body {
 .p-header {
   font-size: 3rem;
   line-height: 0.9;
-  padding: 2rem 2rem 0;
+  padding: 3rem 2rem 0;
 }
 .p-header::before {
   content: "";
@@ -755,7 +742,7 @@ body {
   background-color: #000;
   right: 0%;
   z-index: 50;
-  top: 1.5rem;
+  top: 2.5rem;
 }
 .p-header__ttl:nth-child(2) span {
   color: #ff0000;
@@ -831,6 +818,10 @@ body {
     transform: translateX(0);
   }
 }
+.p-header__ttl.js-gray {
+  color: gray;
+}
+
 /* 線の描写 */
 .p-line {
   content: "";
@@ -839,12 +830,12 @@ body {
   top: 0;
   right: 1.55rem;
   /*線の形状*/
-  width: 1px;
+  width: 3px;
   height: 500px;
   background: yellow;
   /*線の動き*/
-  -webkit-animation: line 2.5s ease-in-out forwards;
-          animation: line 2.5s ease-in-out forwards;
+  -webkit-animation: line 0.5s ease-in-out forwards;
+          animation: line 0.5s ease-in-out forwards;
   -webkit-animation-delay: 7.5s;
           animation-delay: 7.5s;
   opacity: 0;
@@ -854,12 +845,12 @@ body {
 @-webkit-keyframes line {
   0% {
     height: 0;
-    top: 1.5rem;
+    top: 2.5rem;
     opacity: 0;
   }
   100% {
     height: 200px;
-    top: 1.5rem;
+    top: 2.5rem;
     opacity: 1;
   }
 }
@@ -867,12 +858,12 @@ body {
 @keyframes line {
   0% {
     height: 0;
-    top: 1.5rem;
+    top: 2.5rem;
     opacity: 0;
   }
   100% {
     height: 200px;
-    top: 1.5rem;
+    top: 2.5rem;
     opacity: 1;
   }
 }

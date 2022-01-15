@@ -21,12 +21,12 @@
 		@extend .c-grid__front;
 	}
 	&__footer {
-		grid-area: footer;
+		// grid-area: footer;
 	}
-	&::after {
-		width: 50%;
-		height: 100%;
-		position: absolute;
-		background-color: #fff;
-	}
+	// &::after {
+	// 	width: 50%;
+	// 	height: 100%;
+	// 	position: absolute;
+	// 	background-color: #fff;
+	// }
 }
