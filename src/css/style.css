@@ -374,6 +374,9 @@ p {
   margin: 0;
 }
 
+/*.p-headerのアニメーション*/
+/*.c-lineのアニメーション*/
+/*.c-lineのアニメーション*/
 html,
 body {
   height: 100%;
@@ -513,6 +516,7 @@ body {
 
 .c-grid {
   display: grid;
+  height: 100vh;
   overflow-x: hidden;
   position: relative;
   height: 100%;
@@ -554,54 +558,9 @@ body {
   width: 100%;
 }
 
-/* 線の描写 */
-.c-line {
-  content: "";
-  /*描画位置*/
-  position: absolute;
-  top: 0;
-  right: 1.55rem;
-  /*線の形状*/
-  width: 1px;
-  height: 500px;
-  background: #eee;
-  /*線の動き1.4秒かけて動く。永遠にループ*/
-  -webkit-animation: pathmove 2.5s ease-in-out forwards;
-          animation: pathmove 2.5s ease-in-out forwards;
-  -webkit-animation-delay: 7.5s;
-          animation-delay: 7.5s;
-  opacity: 0;
-  z-index: 80;
-}
-
-/*高さ・位置・透過が変化して線が上から下に動く*/
-@-webkit-keyframes pathmove {
-  0% {
-    height: 0;
-    top: 0;
-    opacity: 0;
-  }
-  100% {
-    height: 200px;
-    top: 1.5rem;
-    opacity: 1;
-  }
-}
-@keyframes pathmove {
-  0% {
-    height: 0;
-    top: 0;
-    opacity: 0;
-  }
-  100% {
-    height: 200px;
-    top: 1.5rem;
-    opacity: 1;
-  }
-}
 .loading {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   transition: all 1s;
   position: absolute;
   background-color: black;
@@ -610,7 +569,7 @@ body {
 }
 
 .open {
-  top: -150%;
+  top: -100%;
   -webkit-animation: open;
           animation: open;
   -webkit-animation-duration: 0.5s;
@@ -676,36 +635,18 @@ body {
 }
 @-webkit-keyframes open {
   0% {
-    opacity: 0.8;
-  }
-  25% {
-    opacity: 0.6;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  75% {
-    opacity: 0.3;
+    opacity: 1;
   }
   100% {
-    opacity: 0.1;
+    opacity: 0;
   }
 }
 @keyframes open {
   0% {
-    opacity: 0.8;
-  }
-  25% {
-    opacity: 0.6;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  75% {
-    opacity: 0.3;
+    opacity: 1;
   }
   100% {
-    opacity: 0.1;
+    opacity: 0;
   }
 }
 .c-oval {
@@ -833,11 +774,38 @@ body {
 }
 
 .p-header__ttl:nth-child(2) {
-  transform: translateX(50%);
-  -webkit-animation: SlideIn 2.5s;
-          animation: SlideIn 2.5s;
+  transform: translateX(100%);
+  -webkit-animation: SlideIn 2s;
+          animation: SlideIn 2s;
   -webkit-animation-delay: 7.5s;
           animation-delay: 7.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.p-header__ttl:nth-child(3) {
+  transform: translateX(100%);
+  -webkit-animation: SlideIn 2s;
+          animation: SlideIn 2s;
+  -webkit-animation-delay: 7.6s;
+          animation-delay: 7.6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.p-header__ttl:nth-child(4) {
+  transform: translateX(100%);
+  -webkit-animation: SlideIn 2s;
+          animation: SlideIn 2s;
+  -webkit-animation-delay: 7.7s;
+          animation-delay: 7.7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.p-header__ttl:nth-child(5) {
+  transform: translateX(100%);
+  -webkit-animation: SlideIn 2s;
+          animation: SlideIn 2s;
+  -webkit-animation-delay: 7.8s;
+          animation-delay: 7.8s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -863,11 +831,56 @@ body {
     transform: translateX(0);
   }
 }
+/* 線の描写 */
+.p-line {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  top: 0;
+  right: 1.55rem;
+  /*線の形状*/
+  width: 1px;
+  height: 500px;
+  background: yellow;
+  /*線の動き*/
+  -webkit-animation: line 2.5s ease-in-out forwards;
+          animation: line 2.5s ease-in-out forwards;
+  -webkit-animation-delay: 7.5s;
+          animation-delay: 7.5s;
+  opacity: 0;
+  z-index: 80;
+}
+
+@-webkit-keyframes line {
+  0% {
+    height: 0;
+    top: 1.5rem;
+    opacity: 0;
+  }
+  100% {
+    height: 200px;
+    top: 1.5rem;
+    opacity: 1;
+  }
+}
+
+@keyframes line {
+  0% {
+    height: 0;
+    top: 1.5rem;
+    opacity: 0;
+  }
+  100% {
+    height: 200px;
+    top: 1.5rem;
+    opacity: 1;
+  }
+}
 .p-nav {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  width: 75%;
+  width: 65%;
   margin: auto;
 }
 .p-nav__btn > span {
