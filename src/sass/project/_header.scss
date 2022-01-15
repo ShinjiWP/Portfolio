@@ -14,8 +14,10 @@
 		top: 2.5rem;
 	}
 	&__ttl {
+		transition: 0.5s;
 		&:nth-child(2) span {
 			color: #ff0000;
+			transition: 0.5s;
 		}
 		&:nth-child(5) {
 			position: relative;
@@ -26,6 +28,7 @@
 				height: 11px;
 				width: 11px;
 				background-color: #00ff00;
+				transition: 0.5s;
 				border-radius: 50%;
 				right: 29px;
 			}
@@ -73,4 +76,5 @@
 
 .p-header__ttl.js-gray {
 	color: gray;
+	transition: 0.5s;
 }

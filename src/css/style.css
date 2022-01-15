@@ -744,8 +744,12 @@ body {
   z-index: 50;
   top: 2.5rem;
 }
+.p-header__ttl {
+  transition: 0.5s;
+}
 .p-header__ttl:nth-child(2) span {
   color: #ff0000;
+  transition: 0.5s;
 }
 .p-header__ttl:nth-child(5) {
   position: relative;
@@ -756,6 +760,7 @@ body {
   height: 11px;
   width: 11px;
   background-color: #00ff00;
+  transition: 0.5s;
   border-radius: 50%;
   right: 29px;
 }
@@ -820,6 +825,7 @@ body {
 }
 .p-header__ttl.js-gray {
   color: gray;
+  transition: 0.5s;
 }
 
 /* 線の描写 */
