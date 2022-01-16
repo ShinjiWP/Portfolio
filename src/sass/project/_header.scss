@@ -74,7 +74,12 @@
 	}
 }
 
-.p-header__ttl.js-gray {
-	color: gray;
-	transition: 0.5s;
+.p-header__ttl {
+	&.js-gray {
+		color: gray;
+		transition: 0.5s;
+	}
+	&span.js-gray {
+		color: gray;
+	}
 }

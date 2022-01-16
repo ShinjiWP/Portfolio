@@ -10,7 +10,7 @@
 	height: 500px;
 	background: yellow;
 	/*線の動き*/
-	animation: line .5s ease-in-out forwards;
+	animation: line 1s ease-in-out forwards;
 	animation-delay: 7.5s;
 	opacity: 0;
 	z-index: 80;
