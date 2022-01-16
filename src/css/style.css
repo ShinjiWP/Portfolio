@@ -409,6 +409,15 @@ body {
   height: 100%;
 }
 
+#content {
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  background-image: linear-gradient(0deg, transparent 9%, rgba(255, 255, 255, 0.2) 10%, rgba(255, 255, 255, 0.2) 12%, transparent 13%, transparent 29%, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.1) 31%, transparent 32%, transparent 49%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 51%, transparent 52%, transparent 69%, rgba(255, 255, 255, 0.1) 70%, rgba(255, 255, 255, 0.1) 71%, transparent 72%, transparent 89%, rgba(255, 255, 255, 0.1) 90%, rgba(255, 255, 255, 0.1) 91%, transparent 92%, transparent), linear-gradient(90deg, transparent 9%, rgba(255, 255, 255, 0.2) 10%, rgba(255, 255, 255, 0.2) 12%, transparent 13%, transparent 29%, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.1) 31%, transparent 32%, transparent 49%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 51%, transparent 52%, transparent 69%, rgba(255, 255, 255, 0.1) 70%, rgba(255, 255, 255, 0.1) 71%, transparent 72%, transparent 89%, rgba(255, 255, 255, 0.1) 90%, rgba(255, 255, 255, 0.1) 91%, transparent 92%, transparent);
+  height: 100%;
+  background-size: 50px 50px;
+}
+
 .c-bdc--green {
   border: 1px solid;
   border-color: green;
@@ -541,20 +550,12 @@ body {
 }
 
 .c-grid {
-  display: grid;
   height: 100vh;
   overflow-x: hidden;
   position: relative;
   height: 100%;
-  grid-template: "head" 1.5fr "main" 1fr "footer" 100px/100%;
 }
-.c-grid__head {
-  grid-area: head;
-}
-.c-grid__front, .c-grid__page {
-  grid-area: main;
-  width: 100%;
-}
+
 .c-head {
   text-align: right;
   color: white;
@@ -753,14 +754,16 @@ body {
 }
 
 .p-footer {
-  padding-left: 1rem;
-  padding-top: 1rem;
+  padding: 1rem 0 1rem 1rem;
+  position: absolute;
+  bottom: 0;
 }
 
 .p-header {
   font-size: 3rem;
   line-height: 0.9;
   padding: 3rem 2rem 0;
+  height: 50%;
 }
 .p-header::before {
   content: "";
