@@ -10,16 +10,27 @@
 	top: 0;
 }
 .open {
-	top: -100%;
+	top: -150%;
 	animation: open;
 	animation-duration: 0.5s;
+	opacity: 0.5;
+	transition: .2;
+}
+
+@keyframes open {
+	0% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 
 .load-text {
 	/*対象のテキスト*/
 	position: relative;
 	top: 50%;
-	width: 4.2em;
+	width: 5em;
 	margin: 0 auto;
 	border-right: 2px solid rgba(255, 255, 255, 0.75);
 	font-size: 180%;
@@ -39,7 +50,7 @@
 		width: 0;
 	}
 	to {
-		width: 4.2em;
+		width: 5em;
 	}
 }
 @keyframes blinkTextCursor {
@@ -52,11 +63,3 @@
 	}
 }
 
-@keyframes open {
-	0% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
-}

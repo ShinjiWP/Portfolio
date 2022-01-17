@@ -380,6 +380,15 @@ body {
   /*高さを100%にして描画エリアをとる*/
 }
 
+#particles-js-green {
+  position: fixed;
+  /*描画固定*/
+  z-index: -1;
+  /*描画を一番下に*/
+  width: 100%;
+  height: 100%;
+}
+
 #particles-js-white {
   position: fixed;
   /*描画固定*/
@@ -549,7 +558,7 @@ body {
   transition-delay: 0.64s;
 }
 
-.c-grid {
+.p-wrapper {
   height: 100vh;
   overflow-x: hidden;
   position: relative;
@@ -585,18 +594,37 @@ body {
 }
 
 .open {
-  top: -100%;
+  top: -150%;
   -webkit-animation: open;
           animation: open;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
+  opacity: 0.5;
+  transition: 0.2;
 }
 
+@-webkit-keyframes open {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes open {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .load-text {
   /*対象のテキスト*/
   position: relative;
   top: 50%;
-  width: 4.2em;
+  width: 5em;
   margin: 0 auto;
   border-right: 2px solid rgba(255, 255, 255, 0.75);
   font-size: 180%;
@@ -618,7 +646,7 @@ body {
     width: 0;
   }
   to {
-    width: 4.2em;
+    width: 5em;
   }
 }
 
@@ -628,7 +656,7 @@ body {
     width: 0;
   }
   to {
-    width: 4.2em;
+    width: 5em;
   }
 }
 @-webkit-keyframes blinkTextCursor {
@@ -647,22 +675,6 @@ body {
   }
   to {
     border-right-color: transparent;
-  }
-}
-@-webkit-keyframes open {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes open {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
 .c-oval {
@@ -753,27 +765,20 @@ body {
   letter-spacing: 0.1em;
 }
 
-.p-footer {
+.p-footer, .p-footer--skill {
   padding: 1rem 0 1rem 1rem;
   position: absolute;
   bottom: 0;
 }
+.p-footer--skill {
+  position: static;
+}
 
 .p-header {
-  font-size: 3rem;
+  font-size: 4rem;
   line-height: 0.9;
-  padding: 3rem 2rem 0;
-  height: 50%;
-}
-.p-header::before {
-  content: "";
-  position: absolute;
-  width: 1.55rem;
-  height: 200px;
-  background-color: #000;
-  right: 0%;
-  z-index: 50;
-  top: 2.5rem;
+  margin: 3rem 2rem 0;
+  overflow: hidden;
 }
 .p-header__ttl {
   transition: 0.5s;
@@ -788,18 +793,18 @@ body {
 .p-header__ttl:nth-child(5)::after {
   content: "";
   position: absolute;
-  height: 11px;
-  width: 11px;
+  height: 15px;
+  width: 15px;
   background-color: #00ff00;
   transition: 0.5s;
   border-radius: 50%;
-  right: 29px;
+  right: 38px;
 }
 
 .p-header__ttl:nth-child(2) {
   transform: translateX(100%);
-  -webkit-animation: SlideIn 2s;
-          animation: SlideIn 2s;
+  -webkit-animation: SlideIn 1.5s;
+          animation: SlideIn 1.5s;
   -webkit-animation-delay: 7.5s;
           animation-delay: 7.5s;
   -webkit-animation-fill-mode: forwards;
@@ -807,8 +812,8 @@ body {
 }
 .p-header__ttl:nth-child(3) {
   transform: translateX(100%);
-  -webkit-animation: SlideIn 2s;
-          animation: SlideIn 2s;
+  -webkit-animation: SlideIn 1.5s;
+          animation: SlideIn 1.5s;
   -webkit-animation-delay: 7.6s;
           animation-delay: 7.6s;
   -webkit-animation-fill-mode: forwards;
@@ -816,8 +821,8 @@ body {
 }
 .p-header__ttl:nth-child(4) {
   transform: translateX(100%);
-  -webkit-animation: SlideIn 2s;
-          animation: SlideIn 2s;
+  -webkit-animation: SlideIn 1.5s;
+          animation: SlideIn 1.5s;
   -webkit-animation-delay: 7.7s;
           animation-delay: 7.7s;
   -webkit-animation-fill-mode: forwards;
@@ -825,8 +830,8 @@ body {
 }
 .p-header__ttl:nth-child(5) {
   transform: translateX(100%);
-  -webkit-animation: SlideIn 2s;
-          animation: SlideIn 2s;
+  -webkit-animation: SlideIn 1.5s;
+          animation: SlideIn 1.5s;
   -webkit-animation-delay: 7.8s;
           animation-delay: 7.8s;
   -webkit-animation-fill-mode: forwards;
@@ -854,12 +859,9 @@ body {
     transform: translateX(0);
   }
 }
-.p-header__ttl.js-gray {
+.js-gray {
   color: gray;
   transition: 0.5s;
-}
-.p-header__ttlspan.js-gray {
-  color: gray;
 }
 
 /* 線の描写 */
@@ -885,12 +887,12 @@ body {
 @-webkit-keyframes line {
   0% {
     height: 0;
-    top: 2.5rem;
+    top: 2.7rem;
     opacity: 0;
   }
   100% {
-    height: 200px;
-    top: 2.5rem;
+    height: 250px;
+    top: 2.7rem;
     opacity: 1;
   }
 }
@@ -898,12 +900,12 @@ body {
 @keyframes line {
   0% {
     height: 0;
-    top: 2.5rem;
+    top: 2.7rem;
     opacity: 0;
   }
   100% {
-    height: 200px;
-    top: 2.5rem;
+    height: 250px;
+    top: 2.7rem;
     opacity: 1;
   }
 }
@@ -912,7 +914,10 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   width: 65%;
-  margin: auto;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .p-nav__btn > span {
   color: white;
@@ -941,7 +946,7 @@ body {
   transition: 800ms;
 }
 
-.p-skills {
+.p-skill {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
@@ -949,7 +954,7 @@ body {
   margin: auto;
   height: auto;
 }
-.p-skills__card {
+.p-skill__card {
   height: 200px;
   background-color: #fff;
   outline: 1px solid #000;

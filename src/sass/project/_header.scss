@@ -1,37 +1,28 @@
 .p-header {
-	font-size: 3rem;
+	font-size: 4rem;
 	line-height: 0.9;
-	padding: 3rem 2rem 0;
-	height: 50%;
+	margin: 3rem 2rem 0;
+  overflow: hidden;
 
-	&::before {
-		content: "";
-		position: absolute;
-		width: 1.55rem;
-		height: 200px;
-		background-color: #000;
-		right: 0%;
-		z-index: 50;
-		top: 2.5rem;
-	}
 	&__ttl {
 		transition: 0.5s;
 		&:nth-child(2) span {
 			color: #ff0000;
 			transition: 0.5s;
 		}
+
 		&:nth-child(5) {
 			position: relative;
 			&::after {
 				// color: #00ff00;
 				content: "";
 				position: absolute;
-				height: 11px;
-				width: 11px;
+				height: 15px;
+				width: 15px;
 				background-color: #00ff00;
 				transition: 0.5s;
 				border-radius: 50%;
-				right: 29px;
+				right: 38px;
 			}
 		}
 	}
@@ -40,25 +31,25 @@
 .p-header {
 	&__ttl:nth-child(2) {
 		transform: translateX(100%);
-		animation: SlideIn 2s;
+		animation: SlideIn 1.5s;
 		animation-delay: 7.5s;
 		animation-fill-mode: forwards;
 	}
 	&__ttl:nth-child(3) {
 		transform: translateX(100%);
-		animation: SlideIn 2s;
+		animation: SlideIn 1.5s;
 		animation-delay: 7.6s;
 		animation-fill-mode: forwards;
 	}
 	&__ttl:nth-child(4) {
 		transform: translateX(100%);
-		animation: SlideIn 2s;
+		animation: SlideIn 1.5s;
 		animation-delay: 7.7s;
 		animation-fill-mode: forwards;
 	}
 	&__ttl:nth-child(5) {
 		transform: translateX(100%);
-		animation: SlideIn 2s;
+		animation: SlideIn 1.5s;
 		animation-delay: 7.8s;
 		animation-fill-mode: forwards;
 	}
@@ -75,12 +66,7 @@
 	}
 }
 
-.p-header__ttl {
-	&.js-gray {
-		color: gray;
-		transition: 0.5s;
-	}
-	&span.js-gray {
-		color: gray;
-	}
+.js-gray {
+	color: gray;
+	transition: 0.5s;
 }
