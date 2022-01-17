@@ -1,3 +1,17 @@
 .c-icon {
-	// fill:#1DA1F2;
+	&--html {
+		fill: #e34f26;
+		stroke: #fff;
+		stroke-width: 0.5px;
+	}
+
+	&--css {
+		fill: #1572b6;
+		stroke: #fff;
+		stroke-width: 0.5px;
+	}
+
+	&--sass {
+		fill: #cd6799;
+	}
 }

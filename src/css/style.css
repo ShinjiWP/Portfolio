@@ -573,6 +573,20 @@ body {
   letter-spacing: 0.5px;
 }
 
+.c-icon--html {
+  fill: #e34f26;
+  stroke: #fff;
+  stroke-width: 0.5px;
+}
+.c-icon--css {
+  fill: #1572b6;
+  stroke: #fff;
+  stroke-width: 0.5px;
+}
+.c-icon--sass {
+  fill: #cd6799;
+}
+
 .c-image {
   vertical-align: bottom;
   max-width: 100%;
@@ -956,8 +970,8 @@ body {
 }
 .p-skill__card {
   height: 200px;
-  background-color: #fff;
-  outline: 1px solid #000;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 4px 4px 0 #EEEEEE;
 }
 
 .u-image-add {

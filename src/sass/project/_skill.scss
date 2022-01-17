@@ -7,9 +7,8 @@
   height: auto;
 	&__card {
 		height:200px;
-		background-color: #fff;
-		outline: 1px solid #000;
-	
+		background-color:rgba(255,255,255,0.3);
+		box-shadow: 4px 4px 0 #EEEEEE;
 	}
 }
 
