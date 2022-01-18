@@ -5,6 +5,11 @@
 	font-size: f.$text-normal;
 	color: c.$font-white;
 	font-family: f.$Roboto;
+	
+	&--ttl {
+		@extend .c-text;
+		font-size: f.$text-max;
+	}
 
 	&--small {
 		@extend .c-text;

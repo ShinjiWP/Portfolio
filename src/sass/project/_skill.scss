@@ -1,14 +1,13 @@
 .p-skill {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	gap: 20px;
+	gap: 25px;
 	width: 75%;
-	margin: auto;
-  height: auto;
+	margin: 3rem auto;
+	height: auto;
 	&__card {
-		height:200px;
-		background-color:rgba(255,255,255,0.3);
-		box-shadow: 4px 4px 0 #EEEEEE;
+		background-color: rgba(255, 255, 255, 0.3);
+		box-shadow: 4px 4px 0 #eeeeee;
+
 	}
 }
-
