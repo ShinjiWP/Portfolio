@@ -560,15 +560,9 @@ body {
 
 .c-dot {
   position: absolute;
-  right: 71px;
+  right: 39px;
   z-index: 10;
-}
-
-.p-wrapper {
-  height: 100vh;
-  overflow-x: hidden;
-  position: relative;
-  height: 100%;
+  transition: 0.5s;
 }
 
 .c-head {
@@ -805,16 +799,13 @@ body {
 
 .p-footer {
   padding: 1rem 0 1rem 1rem;
-  position: absolute;
-  bottom: 0;
   height: 100px;
 }
 
 .p-header {
   font-size: 4rem;
   line-height: 0.9;
-  margin: 3rem 2rem 0;
-  overflow: hidden;
+  margin: 3rem 2rem 2rem 0;
 }
 .p-header__ttl {
   transition: 0.5s;
@@ -823,20 +814,16 @@ body {
   color: #ff0000;
   transition: 0.5s;
 }
-.p-header__ttl:nth-child(5) {
-  position: relative;
-}
-.p-header__ttl:nth-child(5)::after {
-  content: "";
-  position: absolute;
-  height: 15px;
-  width: 15px;
-  background-color: #00ff00;
-  transition: 0.5s;
-  border-radius: 50%;
-  right: 38px;
-}
 
+.p-header__ttl--skill {
+  transform: translateX(100%);
+  -webkit-animation: SlideIn 1s;
+          animation: SlideIn 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
 .p-header__ttl:nth-child(2) {
   transform: translateX(100%);
   -webkit-animation: SlideIn 1.5s;
@@ -950,10 +937,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   width: 65%;
-  position: absolute;
-  bottom: 100px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: auto;
 }
 .p-nav__btn > span {
   color: #eeeeee;
@@ -987,7 +971,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
   width: 75%;
-  margin: 3rem auto;
+  margin: 0 auto;
   height: auto;
 }
 .p-skill__card {
@@ -1066,6 +1050,16 @@ button {
   align-items: flex-end;
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
+}
+
+.p-wrapper {
+  height: 100%;
+  overflow-x: hidden;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .u-image-add {

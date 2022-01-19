@@ -1,33 +1,39 @@
 .p-header {
 	font-size: 4rem;
 	line-height: 0.9;
-	margin: 3rem 2rem 0;
-  overflow: hidden;
+	margin: 3rem 2rem 2rem 0;
+	// overflow: hidden;
 
 	&__ttl {
 		transition: 0.5s;
 		&:nth-child(2) span {
 			color: #ff0000;
-			transition: 0.5s;
+			transition: .5s;
 		}
 
-		&:nth-child(5) {
-			position: relative;
-			&::after {
-				content: "";
-				position: absolute;
-				height: 15px;
-				width: 15px;
-				background-color: #00ff00;
-				transition: 0.5s;
-				border-radius: 50%;
-				right: 38px;
-			}
-		}
+		// &:nth-child(5) {
+		// 	position: relative;
+		// 	&::after {
+		// 		content: "";
+		// 		position: absolute;
+		// 		height: 15px;
+		// 		width: 15px;
+		// 		background-color: #00ff00;
+		// 		transition: 0.5s;
+		// 		border-radius: 50%;
+		// 		right: 38px;
+		// 	}
+		// }
 	}
 }
 
 .p-header {
+	&__ttl--skill {
+		transform: translateX(100%);
+		animation: SlideIn 1s;
+		animation-delay: 1s;
+		animation-fill-mode: forwards;
+	}
 	&__ttl:nth-child(2) {
 		transform: translateX(100%);
 		animation: SlideIn 1.5s;
