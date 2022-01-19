@@ -560,6 +560,8 @@ body {
 
 .c-dot {
   position: absolute;
+  right: 71px;
+  z-index: 10;
 }
 
 .p-wrapper {
@@ -577,23 +579,21 @@ body {
   letter-spacing: 0.5px;
 }
 
+.c-icon {
+  stroke: #eeeeee;
+  stroke-width: 0.5px;
+}
 .c-icon--html {
   fill: #e34f26;
-  stroke: #fff;
-  stroke-width: 0.5px;
 }
 .c-icon--css {
   fill: #1572b6;
-  stroke: #fff;
-  stroke-width: 0.5px;
 }
 .c-icon--sass {
   fill: #cd6799;
 }
 .c-icon--wordpress {
   fill: #0087be;
-  stroke: #fff;
-  stroke-width: 0.5px;
 }
 .c-icon--gulp {
   fill: #e34f26;
@@ -774,7 +774,7 @@ body {
 
 .c-text, .c-text--large, .c-text--small, .c-text--ttl {
   font-size: 1.3rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: #eeeeee;
   font-family: "Roboto", sans-serif;
 }
 .c-text--ttl {
@@ -797,13 +797,17 @@ body {
   letter-spacing: 0.1em;
 }
 
-.p-footer, .p-footer--skill {
+.p-contact {
+  margin: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 70%;
+}
+
+.p-footer {
   padding: 1rem 0 1rem 1rem;
   position: absolute;
   bottom: 0;
-}
-.p-footer--skill {
-  position: static;
+  height: 100px;
 }
 
 .p-header {
@@ -952,7 +956,7 @@ body {
   transform: translateX(-50%);
 }
 .p-nav__btn > span {
-  color: rgba(255, 255, 255, 0.9);
+  color: #eeeeee;
 }
 
 .box {
@@ -989,6 +993,79 @@ body {
 .p-skill__card {
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: 4px 4px 0 #eeeeee;
+}
+
+button {
+  cursor: pointer;
+  padding: 8px 16px;
+  margin: 10px 5px;
+}
+
+.controls {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  min-height: 70px;
+  z-index: 100;
+}
+
+.slides-container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex: 1;
+  height: 100vh;
+  width: 100vw;
+  float: left;
+}
+
+.slides-container2 {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex: 1;
+  height: 100vh;
+  width: 100vw;
+  float: left;
+}
+
+.slide {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.slides-inner {
+  position: absolute;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.caption3 {
+  position: absolute;
+  opacity: 0;
+  display: none;
+}
+
+.captioner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-left: 2.5vw;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
 }
 
 .u-image-add {

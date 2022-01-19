@@ -1,15 +1,12 @@
 .c-icon {
-	// background-color: rgba(255, 255, 255, 0.5);
+	stroke: #eeeeee;
+	stroke-width: 0.5px;
 	&--html {
 		fill: #e34f26;
-		stroke: #fff;
-		stroke-width: 0.5px;
 	}
 
 	&--css {
 		fill: #1572b6;
-		stroke: #fff;
-		stroke-width: 0.5px;
 	}
 
 	&--sass {
@@ -18,8 +15,6 @@
 
 	&--wordpress {
 		fill: #0087be;
-		stroke: #fff;
-		stroke-width: 0.5px;
 	}
 
 	&--gulp {

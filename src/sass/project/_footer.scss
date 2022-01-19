@@ -2,8 +2,5 @@
 	padding: 1rem 0 1rem 1rem;
 	position: absolute;
 	bottom: 0;
-	&--skill{
-		@extend .p-footer;
-		position: static;
-	}
+	height: 100px;
 }
