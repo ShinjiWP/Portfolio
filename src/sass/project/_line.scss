@@ -4,14 +4,15 @@
 	/*描画位置*/
 	position: absolute;
 	top: 0;
-	right: 1.55rem;
+	right: 0;
 	/*線の形状*/
-	width: 3px;
-	height: 500px;
-	background: yellow;
+	width: 1.55rem;
+	// height: 500px;
+	// background: yellow;
+	background: linear-gradient(0deg, #E4A972, #9941D8);
 	/*線の動き*/
 	animation: line 1s ease-in-out forwards;
-	animation-delay: 7.5s;
+	animation-delay: 5s;
 	opacity: 0;
 	z-index: 80;
 }
@@ -19,13 +20,13 @@
 @keyframes line {
 	0% {
 		height: 0;
-		top: 2.7rem;
+		top: 0;
 		opacity: 0;
 	}
 
 	100% {
-		height: 250px;
-		top: 2.7rem;
+		height: 100%;
+		top: 0;
 		opacity: 1;
 	}
 }
