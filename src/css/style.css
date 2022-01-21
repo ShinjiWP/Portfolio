@@ -427,14 +427,23 @@ body {
   background-size: 50px 50px;
 }
 
-.c-background {
-  background-image: url(../image/png/skill.png);
-  width: 100%;
+.c-background--products, .c-background--skill, .c-background--about, .c-background--contact {
+  background-image: url(../image/png/products.png);
+  width: 40%;
   height: 100%;
   position: absolute;
-  z-index: 30;
-  background-repeat: repeat-y;
+  z-index: -1;
+  background-repeat: no-repeat;
   background-size: contain;
+}
+.c-background--contact {
+  background-image: url(../image/png/contact.png);
+}
+.c-background--about {
+  background-image: url(../image/png/about.png);
+}
+.c-background--skill {
+  background-image: url(../image/png/skill.png);
 }
 
 .c-bdc--green {
@@ -928,7 +937,7 @@ body {
   height: auto;
 }
 .p-skill__card {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 4px 4px 0 #eeeeee;
 }
 
