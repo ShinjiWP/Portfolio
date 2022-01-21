@@ -8,7 +8,7 @@
 		transition: 0.5s;
 		&:nth-child(2) span {
 			color: #ff0000;
-			transition: .5s;
+			transition: 0.5s;
 		}
 
 		// &:nth-child(5) {
@@ -31,36 +31,44 @@
 	&__ttl--skill {
 		transform: translateX(100%);
 		animation: SlideIn 1s;
-		animation-delay: 1s;
+		animation-delay: 0.5s;
 		animation-fill-mode: forwards;
 	}
 	&__ttl:nth-child(2) {
 		transform: translateX(100%);
+		// opacity: 0;//この辺消してコメントアウトを戻せば元通り
+		// transition: 0.5s;//この辺消してコメントアウトを戻せば元通り
 		animation: SlideIn 1.5s;
 		animation-delay: 7.5s;
 		animation-fill-mode: forwards;
 	}
 	&__ttl:nth-child(3) {
 		transform: translateX(100%);
+		// opacity: 0;
+		// transition: 0.5s;
 		animation: SlideIn 1.5s;
 		animation-delay: 7.6s;
 		animation-fill-mode: forwards;
 	}
 	&__ttl:nth-child(4) {
 		transform: translateX(100%);
+		// opacity: 0;
+		// transition: 0.5s;
 		animation: SlideIn 1.5s;
 		animation-delay: 7.7s;
 		animation-fill-mode: forwards;
 	}
 	&__ttl:nth-child(5) {
 		transform: translateX(100%);
+		// opacity: 0;
+		// transition: 0.5s;
 		animation: SlideIn 1.5s;
 		animation-delay: 7.8s;
 		animation-fill-mode: forwards;
 	}
 }
 
-@keyframes SlideIn {
+@keyframes SlideIn {//ここのコメントアウトも戻せば元通り
 	from {
 		opacity: 0;
 		transform: translateX(100%);
