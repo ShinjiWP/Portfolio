@@ -6,8 +6,24 @@
 	margin: 0 auto;
 	height: auto;
 	&__card {
-		background-color: rgba(255, 255, 255, 0.8);
-		box-shadow: 4px 4px 0 #eeeeee;
+		background-color: rgba(255, 255, 255, 0.9);
+		box-shadow: 4px 4px 0  rgba(255, 255, 255, 0.6);
+		padding-bottom: 1rem;
+	}
+	&__icon {
+		display: flex;
+		justify-content: space-around;
+		margin: 1.5rem 0;
+		&--text{
+			@extend .p-skill__icon;
+			width: 80px;
+			height: 80px;
+			margin: 1.5rem auto;
+			align-items: center;
+		}
+	}
 
+	&__description{
+		margin: 1rem 1rem 2rem;
 	}
 }
