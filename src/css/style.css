@@ -427,7 +427,7 @@ body {
   background-size: 50px 50px;
 }
 
-.c-background--products, .c-background--skill, .c-background--about, .c-background--contact {
+.c-background--products, .c-background--circle, .c-background--skill, .c-background--about, .c-background--contact {
   background-image: url(../image/png/products.png);
   width: 40%;
   height: 100%;
@@ -445,7 +445,35 @@ body {
 .c-background--skill {
   background-image: url(../image/png/skill.png);
 }
+.c-background--circle {
+  background-image: url();
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+}
 
+img {
+  -webkit-animation: rotate-anime 200s linear infinite;
+          animation: rotate-anime 200s linear infinite;
+}
+
+@-webkit-keyframes rotate-anime {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-anime {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .c-bdc--green {
   border: 1px solid;
   border-color: green;
@@ -623,6 +651,12 @@ body {
 .c-image--main {
   vertical-align: bottom;
   width: 100%;
+}
+
+.c-image--circle {
+  position: absolute;
+  left: -500px;
+  top: -500px;
 }
 
 .loading {
@@ -899,7 +933,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   width: 65%;
-  margin: auto;
+  margin: auto auto 0;
 }
 .p-nav__btn > span {
   color: #eeeeee;

@@ -10,7 +10,7 @@
 	// bottom: 100px;
 	// left: 50%;
 	// transform: translateX(-50%);
-	margin: auto;
+	margin: auto auto 0;
 	&__btn > span {
 		color: c.$font-white;
 	}

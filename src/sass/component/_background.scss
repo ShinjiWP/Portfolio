@@ -20,4 +20,20 @@
 		@extend .c-background--products;
 		background-image: url(../image/png/skill.png);
 	}
+	&--circle {
+		@extend .c-background--products;
+		background-image: url();
+		overflow: hidden;
+		width: 100%;
+		margin: auto;
+	}
+}
+
+
+img {
+  animation: rotate-anime 200s linear infinite;
+}
+@keyframes rotate-anime {
+  0%  {transform: rotate(0);}
+  100%  {transform: rotate(360deg);}
 }
