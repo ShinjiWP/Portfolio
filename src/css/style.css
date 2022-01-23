@@ -449,7 +449,7 @@ body {
   background-image: url();
   overflow: hidden;
   width: 100%;
-  margin: auto;
+  opacity: 0.3;
 }
 
 img {
@@ -620,10 +620,6 @@ img {
   letter-spacing: 0.5px;
 }
 
-.c-icon {
-  stroke: #eeeeee;
-  stroke-width: 0.5px;
-}
 .c-icon--html {
   fill: #e34f26;
 }
