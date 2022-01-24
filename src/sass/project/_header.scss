@@ -4,6 +4,10 @@
 	margin: 3rem 2rem 2rem 0;
 	overflow: hidden;
   width: 95%;
+  &--link{
+    @extend .p-header;
+    overflow: unset;
+  }
   // margin-top: 3rem;
 
 	&__ttl {
@@ -36,6 +40,10 @@
 		animation-delay: 0.5s;
 		animation-fill-mode: forwards;
 	}
+  &__ttl--products{
+    @extend .p-header__ttl--skill;
+  }
+
 	&__ttl:nth-child(2) {
 		transform: translateX(100%);
 		// opacity: 0;//この辺消してコメントアウトを戻せば元通り
