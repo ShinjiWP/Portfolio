@@ -821,37 +821,37 @@ img {
 }
 .p-header__ttl:nth-child(2) {
   transform: translateX(100%);
-  -webkit-animation: SlideIn 1.5s;
-          animation: SlideIn 1.5s;
-  -webkit-animation-delay: 7.5s;
-          animation-delay: 7.5s;
+  -webkit-animation: SlideIn 1s;
+          animation: SlideIn 1s;
+  -webkit-animation-delay: 5.5s;
+          animation-delay: 5.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 .p-header__ttl:nth-child(3) {
   transform: translateX(100%);
-  -webkit-animation: SlideIn 1.5s;
-          animation: SlideIn 1.5s;
-  -webkit-animation-delay: 7.6s;
-          animation-delay: 7.6s;
+  -webkit-animation: SlideIn 1s;
+          animation: SlideIn 1s;
+  -webkit-animation-delay: 5.6s;
+          animation-delay: 5.6s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 .p-header__ttl:nth-child(4) {
   transform: translateX(100%);
-  -webkit-animation: SlideIn 1.5s;
-          animation: SlideIn 1.5s;
-  -webkit-animation-delay: 7.7s;
-          animation-delay: 7.7s;
+  -webkit-animation: SlideIn 1s;
+          animation: SlideIn 1s;
+  -webkit-animation-delay: 5.7s;
+          animation-delay: 5.7s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 .p-header__ttl:nth-child(5) {
   transform: translateX(100%);
-  -webkit-animation: SlideIn 1.5s;
-          animation: SlideIn 1.5s;
-  -webkit-animation-delay: 7.8s;
-          animation-delay: 7.8s;
+  -webkit-animation: SlideIn 1s;
+          animation: SlideIn 1s;
+  -webkit-animation-delay: 5.8s;
+          animation-delay: 5.8s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -893,8 +893,8 @@ img {
   width: 5px;
   background: yellow;
   /*線の動き*/
-  -webkit-animation: line 1s ease-in-out forwards;
-          animation: line 1s ease-in-out forwards;
+  -webkit-animation: line 0.5s ease-in-out forwards;
+          animation: line 0.5s ease-in-out forwards;
   -webkit-animation-delay: 5s;
           animation-delay: 5s;
   opacity: 0;

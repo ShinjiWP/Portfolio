@@ -48,32 +48,32 @@
 		transform: translateX(100%);
 		// opacity: 0;//この辺消してコメントアウトを戻せば元通り
 		// transition: 0.5s;//この辺消してコメントアウトを戻せば元通り
-		animation: SlideIn 1.5s;
-		animation-delay: 7.5s;
+		animation: SlideIn 1s;
+		animation-delay: 5.5s;
 		animation-fill-mode: forwards;
 	}
 	&__ttl:nth-child(3) {
 		transform: translateX(100%);
 		// opacity: 0;
 		// transition: 0.5s;
-		animation: SlideIn 1.5s;
-		animation-delay: 7.6s;
+		animation: SlideIn 1s;
+		animation-delay: 5.6s;
 		animation-fill-mode: forwards;
 	}
 	&__ttl:nth-child(4) {
 		transform: translateX(100%);
 		// opacity: 0;
 		// transition: 0.5s;
-		animation: SlideIn 1.5s;
-		animation-delay: 7.7s;
+		animation: SlideIn 1s;
+		animation-delay: 5.7s;
 		animation-fill-mode: forwards;
 	}
 	&__ttl:nth-child(5) {
 		transform: translateX(100%);
 		// opacity: 0;
 		// transition: 0.5s;
-		animation: SlideIn 1.5s;
-		animation-delay: 7.8s;
+		animation: SlideIn 1s;
+		animation-delay: 5.8s;
 		animation-fill-mode: forwards;
 	}
 }
