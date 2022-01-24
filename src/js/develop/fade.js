@@ -18,3 +18,15 @@ $(".load-text").fadeOut(5000, function () {
 	// 	});
 });
 
+window.onload = function () {
+	var ref = document.referrer;
+	var result = ref.match(/contact/);
+
+	if (!result) {
+		//含まれない場合の処理
+		// alert(document.referrer);
+	} else {
+		//含まれる場合の処理
+		alert(document.referrer);
+	}
+};
