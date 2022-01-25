@@ -508,6 +508,11 @@ img {
   background-color: black;
 }
 
+.c-borderline {
+  border-bottom: 1px solid;
+  box-shadow: 0 2px 0 #eee;
+}
+
 .c-button {
   display: inline-block;
   padding: 0.5em 4em;
@@ -933,8 +938,18 @@ img {
   width: 65%;
   margin: auto auto 0;
 }
+.p-nav__btn {
+  width: 30%;
+  padding: 0.5em 1em;
+}
 .p-nav__btn > span {
   color: #eeeeee;
+}
+.p-nav--products {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 2rem;
 }
 
 .box {
@@ -992,7 +1007,7 @@ img {
   display: flex;
   justify-content: space-around;
   margin: 1.5rem 0;
-  width: 100%;
+  width: 95%;
 }
 .p-skill__icon--text {
   width: 80px;
