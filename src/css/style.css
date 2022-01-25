@@ -509,8 +509,9 @@ img {
 }
 
 .c-borderline {
-  border-bottom: 1px solid;
-  box-shadow: 0 2px 0 #eee;
+  border-top: 2px solid;
+  box-shadow: 0 2.5px 0 #eee;
+  border-radius: 1px;
 }
 
 .c-button {
@@ -945,7 +946,7 @@ img {
 .p-nav__btn > span {
   color: #eeeeee;
 }
-.p-nav--products {
+.p-nav--link {
   display: flex;
   justify-content: center;
   gap: 5px;
@@ -1006,17 +1007,21 @@ img {
 .p-skill__icon, .p-skill__icon--text {
   display: flex;
   justify-content: space-around;
-  margin: 1.5rem 0;
-  width: 95%;
+  margin: 1.5rem auto;
+  width: 90%;
+  border-bottom: 1px solid;
+  box-shadow: 0 2px 0 #eee;
+  padding-bottom: 1rem;
 }
 .p-skill__icon--text {
-  width: 80px;
+  width: 90%;
   height: 80px;
-  margin: 1.5rem auto;
+  margin: 2.5rem auto 1.5rem;
   align-items: center;
 }
 .p-skill__description {
   margin: 1rem 1rem 2rem;
+  text-align: justify;
 }
 
 .p-wrapper {
