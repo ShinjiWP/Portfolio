@@ -940,7 +940,7 @@ img {
   margin: auto auto 0;
 }
 .p-nav__btn {
-  width: 30%;
+  width: 100%;
   padding: 0.5em 1em;
 }
 .p-nav__btn > span {
@@ -949,8 +949,10 @@ img {
 .p-nav--link {
   display: flex;
   justify-content: center;
-  gap: 5px;
-  margin-top: 2rem;
+  gap: 1rem;
+  margin: 2rem auto;
+  width: 95%;
+  max-width: 700px;
 }
 
 .box {
