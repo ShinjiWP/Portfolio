@@ -533,7 +533,6 @@ img {
 .button {
   position: relative;
   display: inline-block;
-  padding: 0.5em 4em;
   border: 2px solid #fff;
   color: #fff;
   text-align: center;
@@ -609,6 +608,10 @@ img {
 
 .button:hover span:nth-child(8) {
   transition-delay: 0.64s;
+}
+
+.flt-btn {
+  filter: blur(2px) brightness(80%);
 }
 
 .c-dot {
