@@ -15,7 +15,6 @@
 // });
 
 
-
 $(".c-hover--btn1").on("mouseenter", function () {
 	$(
 		".p-header__ttl:nth-child(2),.p-header__ttl:nth-child(3),.p-header__ttl:nth-child(4),.p-header__ttl:nth-child(5)"

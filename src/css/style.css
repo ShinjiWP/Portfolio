@@ -619,6 +619,7 @@ img {
 
 .js-filter {
   filter: blur(2px);
+  transition: 0.3s;
 }
 
 .c-head {
@@ -954,6 +955,7 @@ img {
 .p-nav__btn {
   width: 100%;
   padding: 0.5em 1em;
+  transition: 0.3s;
 }
 .p-nav__btn > span {
   color: #eeeeee;
