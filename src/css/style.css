@@ -452,7 +452,7 @@ body {
   opacity: 0.3;
 }
 
-img {
+.c-image--circle {
   -webkit-animation: rotate-anime 200s linear infinite;
           animation: rotate-anime 200s linear infinite;
 }
@@ -619,7 +619,7 @@ img {
 
 .js-filter {
   filter: blur(2px);
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .c-head {
@@ -955,7 +955,7 @@ img {
 .p-nav__btn {
   width: 100%;
   padding: 0.5em 1em;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .p-nav__btn > span {
   color: #eeeeee;
@@ -979,6 +979,7 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   width: 80%;
+  max-width: 1000px;
   margin: auto;
 }
 .p-products__link {
